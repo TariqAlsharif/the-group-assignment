@@ -1,0 +1,62 @@
+//vars 
+$bg-gray: #F9FAFC;
+
+@font-face {
+    font-family: Janna;
+    src: url(font/Janna\ LT\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Janna-bold;
+    src: url(font/Janna\ LT\ Bold.ttf);
+}
+
+body {
+    background-color: $bg-gray;
+    font-family: Janna;
+}
+
+nav{
+    background-image: linear-gradient(to left, #83205A , #5C4974);
+    font-family: Janna-bold;
+    font-size: 12px;
+    ul{
+        li{
+            &::after{
+                border-right: 1px solid $bg-gray;
+            }
+        }
+        .nav-link{
+            color: #fff!important;
+        }
+    }
+}
+
+div {
+    border: 1px solid #000;
+}
+
+p {
+    display: flex;
+}
+
+
+
+
+// for navbar
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        // display: flex;
+        // flex-direction: column-reverse;
+    }
+
+    .navbar-nav {
+        // display: flex;   
+        align-items: flex-start;
+    }
+}
+
+// for mobile view
+@media screen and (max-width: 766px) {
+    body {}
+}

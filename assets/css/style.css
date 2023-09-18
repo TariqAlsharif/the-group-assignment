@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Janna;
+  src: url(font/Janna\ LT\ Regular.ttf);
+}
+@font-face {
+  font-family: Janna-bold;
+  src: url(font/Janna\ LT\ Bold.ttf);
+}
+body {
+  background-color: #F9FAFC;
+  font-family: Janna;
+}
+
+nav {
+  background-image: -webkit-gradient(linear, right top, left top, from(#83205A), to(#5C4974));
+  background-image: linear-gradient(to left, #83205A, #5C4974);
+  font-family: Janna-bold;
+  font-size: 12px;
+}
+nav ul li::after {
+  border-right: 1px solid #F9FAFC;
+}
+nav ul .nav-link {
+  color: #fff !important;
+}
+
+div {
+  border: 1px solid #000;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}/*# sourceMappingURL=style.css.map */
