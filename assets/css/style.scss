@@ -11,23 +11,39 @@ $bg-gray: #F9FAFC;
     src: url(font/Janna\ LT\ Bold.ttf);
 }
 
+* {
+    margin: 0px;
+}
+
 body {
     background-color: $bg-gray;
     font-family: Janna;
+    font-size: 12px;
 }
 
-nav{
-    background-image: linear-gradient(to left, #83205A , #5C4974);
+nav {
+    background-image: linear-gradient(to left, #83205A, #5C4974);
     font-family: Janna-bold;
     font-size: 12px;
-    ul{
-        li{
-            &::after{
+
+    #navbarSupportedContent{
+        form {
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    ul {
+        li {
+            &::after {
                 border-right: 1px solid $bg-gray;
             }
         }
-        .nav-link{
-            color: #fff!important;
+
+        .nav-link {
+            color: #fff !important;
         }
     }
 }
@@ -38,11 +54,14 @@ div {
 
 p {
     display: flex;
+    margin:0px;
 }
 
 
 
 
+
+// ================= MEDIA QUERY ================
 // for navbar
 @media screen and (max-width: 991px) {
     .navbar-collapse {
@@ -58,5 +77,7 @@ p {
 
 // for mobile view
 @media screen and (max-width: 766px) {
-    body {}
+    .market-status {
+        flex-direction: column;
+    }
 }

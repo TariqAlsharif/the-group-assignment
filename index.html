@@ -21,8 +21,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <form class="form-inline my-2 my-lg-0 px-2">
         <a href="">الدخول الذكي</a>
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" aria-label="Search">
+        <input class="form-control mr-sm-2" type="search" aria-label="Search">
         <button class="btn btn-outline-success my-2 mx-2 my-sm-0" type="submit">دخول</button>
       </form>
       <ul class="navbar-nav mr-auto px-2">
@@ -41,29 +41,285 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 col-xs-6">
-        <p>الشعار</p>
+      <div class="col-md-5 col-xs-6">
+        <div class="market-status d-flex">
+          <div class="col-xs-12">
+            <p>1</p>
+          </div>
+          <div class="col-xs-12">
+            <p>2</p>
+          </div>
+          <div class="col-xs-12">
+            <p>3</p>
+          </div>
+          <div class="col-xs-12">
+            <p>4</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-10 col-xs-6">
-        <p>MARKET STATUS</p>
+      <div class="col-md-7 col-xs-6 d-none d-sm-block">
+        <img src="assets/images/logo.png" alt="logo" width="160">
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12 col-xs-12">
-        <p>BAR WITH CHARTS</p>
+        <div class="bar-with-chart">
+          <ul class="list-inline list-unstyled d-flex p-0">
+            <li class="list-inline-item">
+              <p>1</p>
+            </li>
+            <li class="list-inline-item">
+              <p>2</p>
+            </li>
+            <li class="list-inline-item">
+              <p>يشيش</p>
+            </li>
+            <li class="list-inline-item">
+              <p>يشيشي</p>
+            </li>
+            <li class="list-inline-item">
+              <p>قثقث فقفق</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-2 col-xs-12">
-        <p>COMPANIES LIST</p>
+        <div class="company-list">
+          <div class="comp-list-header d-flex justify-content-between align-items-center">
+            <p>الشركات</p>
+            <select class="comp-dropdown">
+              <option value="1">الكل</option>
+              <option value="2">شركة</option>
+              <option value="3">شركة</option>
+              <option value="4">شركة</option>
+              <option value="5">شركة</option>
+            </select>
+          </div>
+          <div class="comp-list-items">
+            <ul class="list-unstyled p-0">
+              <li>
+                <div class="comp-item d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
+                    <p class="m-0">اسم الشركة</p>
+                  </div>
+                  <img src="assets/images/star.png" alt="star" width="20">
+                </div>
+              </li>
+              <li>
+                <div class="comp-item d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
+                    <p class="m-0">اسم الشركة</p>
+                  </div>
+                  <img src="assets/images/star.png" alt="star" width="20">
+                </div>
+              </li>
+              <li>
+                <div class="comp-item d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
+                    <p class="m-0">اسم الشركة</p>
+                  </div>
+                  <img src="assets/images/star.png" alt="star" width="20">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="col-md-8 col-xs-12">
-        <p>SIGN IN</p>
+        <div class="col-md-12">
+          <div class="company-status-bar">
+            <ul class="list-inline list-unstyled d-flex justify-content-between p-0">
+              <li class="list-inline-item comp-name d-flex align-items-center">
+                <div>
+                  <p>الشركة</p>
+                  <img src="assets/images/company-icon.png" alt="comp logo" width="20">
+                  <span>اسم الشركة</span>
+                </div>
+                <div>
+                  <img src="assets/images/line chart icon.png" alt="line chart" width="70">
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p>اسهم العرض</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p>سعر العرض</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p> السعر الحالي</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p>سعر الطلب</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p>اسهم الطلب</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p>التغيير % </p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p> اجمالي الاسهم</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+              <li class="list-inline-item txt-center">
+                <div class="d-flex flex-column align-items-center">
+                  <p> ريال</p>
+                  <p><b>60,859</b></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-1" data-toggle="tab" data-target="#c1" type="button"
+                role="tab" aria-controls="c1" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-2" data-toggle="tab" data-target="#c2" type="button"
+                role="tab" aria-controls="c2" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-3" data-toggle="tab" data-target="#c3" type="button"
+                role="tab" aria-controls="c3" aria-selected="false">Contact</button>
+            </li>
+
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-4" data-toggle="tab" data-target="#c4" type="button"
+                role="tab" aria-controls="c4" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-5" data-toggle="tab" data-target="#c5" type="button"
+                role="tab" aria-controls="c5" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-6" data-toggle="tab" data-target="#c6" type="button"
+                role="tab" aria-controls="c6" aria-selected="false">Contact</button>
+            </li>
+
+
+            
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="c1" role="tabpanel" aria-labelledby="tab-1">
+              <div class="text-center">
+                <button class="btn btn-primary">شراء</button>
+                <button class="btn btn-danger">بيع</button>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img src="assets/images/star.png" alt="user" width="70">
+                <p>يرجى تسجيل الدخول</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="c2" role="tabpanel" aria-labelledby="tab-2">two</div>
+            <div class="tab-pane fade" id="c3" role="tabpanel" aria-labelledby="tab-3">three</div>
+            <div class="tab-pane fade" id="c4" role="tabpanel" aria-labelledby="tab-4">four</div>
+            <div class="tab-pane fade" id="c5" role="tabpanel" aria-labelledby="tab-5">five</div>
+            <div class="tab-pane fade" id="c6" role="tabpanel" aria-labelledby="tab-6">six</div>
+          </div>
+        </div>
       </div>
       <div class="col-md-2 col-xs-12">
-        <p>MARKET ACCORDING TO PRICE</p>
+        <div class="market-price-block">
+          <ul class="nav nav-pills mb-3 justify-content-between p-0" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">السوق حسب الأسعار</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">الصفقات</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <table class="table table-bordered text-right">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">الاسهم</th>
+                    <th scope="col">السعر</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <table class="table table-bordered text-right">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">الاسهم</th>
+                    <th scope="col">السعر</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
