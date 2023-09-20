@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>The Group Assignment</title>
 </head>
@@ -13,27 +14,40 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0 px-2">
-        <a href="">الدخول الذكي</a>
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 mx-2 my-sm-0" type="submit">دخول</button>
+      <form class="form-inline my-2 my-lg-0 px-2 text-white login-block">
+        <i class="fa fa-qrcode fa-lg ml-1" aria-hidden="true"></i>
+        <a href="#"> الدخول الذكي</a>
+        <div class="custom-bo mr-3"></div>
+        <input class="form-control mr-sm-4" type="text">
+        <input class="form-control mr-sm-2" type="text">
+        <button class="btn border-0 btn-sm my-2 mx-2 my-sm-0 px-3" type="submit">
+          <i class="fa fa-sign-in mx-1" aria-hidden="true"></i>
+          دخول</button>
       </form>
-      <ul class="navbar-nav mr-auto px-2">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><strong> الرئيسية </strong><span class="sr-only">(current)</span></a>
-        </li>
+      <ul class="navbar-nav mr-auto px-2 nav-left-side">
         <li class="nav-item">
-          <a class="nav-link" href="#">تغيير كلمة المرور</a>
+          <a class="nav-link" href="#">
+            <i class="fa fa-home mx-1" aria-hidden="true"></i>
+            الرئيسية </a>
         </li>
+        <li class="custom-bo mt-2 mx-2"></li>
         <li class="nav-item">
-          <a class="nav-link" href="#">خروج</a>
+          <a class="nav-link" href="#">
+            <i class="fa fa-lock mx-1" aria-hidden="true"></i>
+            تغيير كلمة المرور</a>
+        </li>
+        <li class="custom-bo mt-2 mx-2"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-sign-out mx-1" aria-hidden="true"></i>
+            خروج</a>
         </li>
       </ul>
     </div>
@@ -41,23 +55,29 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-5 col-xs-6">
-        <div class="market-status d-flex">
-          <div class="col-xs-12">
-            <p>1</p>
+      <div class="col-md-7 col-xs-6">
+        <div class="market-status main-block d-flex justify-content-between p-3 mt-2">
+          <div class="col-xs-12 d-flex align-items-center">
+            <i class="fa fa-bell purple-txt" aria-hidden="true"></i>
+            <p class="gray-txt font-weight-bold mx-2">المؤشر</p>
+            <span class="blue-txt font-weight-bold">14,000</span>
           </div>
-          <div class="col-xs-12">
-            <p>2</p>
+          <div class="col-xs-12 d-flex align-items-center">
+            <i class="fa fa-chevron-circle-up green-txt" aria-hidden="true"></i>
+            <span class="green-txt font-weight-bold mr-2">%1</span>
           </div>
-          <div class="col-xs-12">
-            <p>3</p>
+          <div class="col-xs-12 d-flex align-items-center">
+            <span class="green-txt font-weight-bold blue-txt">161,678,168</span>
+            <p class="font-weight-bold mr-2 gray-txt">ريال</p>
           </div>
-          <div class="col-xs-12">
-            <p>4</p>
+          <div class="col-xs-12 d-flex align-items-center">
+            <p>حالة السوق</p>
+            <i class="fa fa-circle green-txt mx-2" aria-hidden="true"></i>
+            <span class="green-txt">مفتوح</span>
           </div>
         </div>
       </div>
-      <div class="col-md-7 col-xs-6 d-none d-sm-block">
+      <div class="col-md-5 col-xs-6 d-none d-sm-block">
         <img src="assets/images/logo.png" alt="logo" width="160">
       </div>
     </div>
@@ -65,21 +85,35 @@
     <div class="row">
       <div class="col-md-12 col-xs-12">
         <div class="bar-with-chart">
-          <ul class="list-inline list-unstyled d-flex p-0">
+          <ul class="list-inline list-unstyled d-flex align-items-center p-0 mb-0">
             <li class="list-inline-item">
-              <p>1</p>
+              <span class="black-txt">النقد</span>
+              <span class="mr-1 purple-txt">0.00</span>
             </li>
             <li class="list-inline-item">
-              <p>2</p>
+              <span class="black-txt">المحفظة</span>
+              <span class="mr-1 purple-txt">0.00</span>
             </li>
             <li class="list-inline-item">
-              <p>يشيش</p>
+              <span class="black-txt">الموجودات</span>
+              <span class="mr-1 purple-txt">0.00</span>
             </li>
             <li class="list-inline-item">
-              <p>يشيشي</p>
+              <span class="black-txt">قيمة اوامر الشراء</span>
+              <span class="mr-1 purple-txt">0.00</span>
             </li>
             <li class="list-inline-item">
-              <p>قثقث فقفق</p>
+              <span class="black-txt">الهامش المتاح</span>
+              <span class="mr-1 purple-txt">0.00</span>
+            </li>
+            <li class="list-inline-item">
+              <span class="black-txt">المديونية</span>
+              <span class="mr-1 purple-txt">0.00</span>
+            </li>
+            <li class="list-inline-item">
+              <img src="assets/images/gage.png" alt="gage" width="100" style="margin-top: -40px;">
+              <span class="black-txt">القدرة الشرائية</span>
+              <span class="mr-1 purple-txt">300,000</span>
             </li>
           </ul>
         </div>
@@ -88,9 +122,9 @@
 
     <div class="row">
       <div class="col-md-2 col-xs-12">
-        <div class="company-list">
-          <div class="comp-list-header d-flex justify-content-between align-items-center">
-            <p>الشركات</p>
+        <div class="company-list main-block p-2">
+          <div class="comp-list-header d-flex justify-content-between align-items-center border-bottom pb-1">
+            <p class="purple-txt font-weight-bold fs-14">الشركات</p>
             <select class="comp-dropdown">
               <option value="1">الكل</option>
               <option value="2">شركة</option>
@@ -100,144 +134,147 @@
             </select>
           </div>
           <div class="comp-list-items">
-            <ul class="list-unstyled p-0">
-              <li>
-                <div class="comp-item d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
-                    <p class="m-0">اسم الشركة</p>
-                  </div>
-                  <img src="assets/images/star.png" alt="star" width="20">
-                </div>
-              </li>
-              <li>
-                <div class="comp-item d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
-                    <p class="m-0">اسم الشركة</p>
-                  </div>
-                  <img src="assets/images/star.png" alt="star" width="20">
-                </div>
-              </li>
-              <li>
-                <div class="comp-item d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center">
-                    <img src="assets/images/company-icon.png" alt="company logo" width="25">
-                    <p class="m-0">اسم الشركة</p>
-                  </div>
-                  <img src="assets/images/star.png" alt="star" width="20">
-                </div>
-              </li>
-            </ul>
+            <ul class="list-unstyled p-0"></ul>
           </div>
         </div>
       </div>
-      <div class="col-md-8 col-xs-12">
-        <div class="col-md-12">
+      <div class="col-md-8 col-xs-12 px-0">
+        <div class="col-md-12 main-block">
           <div class="company-status-bar">
-            <ul class="list-inline list-unstyled d-flex justify-content-between p-0">
+            <ul class="list-inline list-unstyled d-flex justify-content-between pr-0 pt-3">
               <li class="list-inline-item comp-name d-flex align-items-center">
                 <div>
-                  <p>الشركة</p>
+                  <p class="mb-2 fs-16">الشركة</p>
                   <img src="assets/images/company-icon.png" alt="comp logo" width="20">
-                  <span>اسم الشركة</span>
+                  <span class="font-weight-bold black-txt">اسم الشركة</span>
                 </div>
                 <div>
-                  <img src="assets/images/line chart icon.png" alt="line chart" width="70">
+                  <img class="mr-4" src="assets/images/line chart icon.png" alt="line chart" width="80">
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p>اسهم العرض</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2">اسهم العرض</p>
+                  <p class="value">60,046</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p>سعر العرض</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2">سعر العرض</p>
+                  <p class="value or-bg px-2">40.859</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p> السعر الحالي</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2"> السعر الحالي</p>
+                  <p class="value gn-bg px-2">40.859</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p>سعر الطلب</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2">سعر الطلب</p>
+                  <p class="value bu-bg px-2">40.846</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p>اسهم الطلب</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2">اسهم الطلب</p>
+                  <p class="value">7,860</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p>التغيير % </p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2">التغيير % </p>
+                  <p class="value green-txt">0.39</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p> اجمالي الاسهم</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2"> اجمالي الاسهم</p>
+                  <p class="value">1,984,282</p>
                 </div>
               </li>
+              <li class="border"></li>
               <li class="list-inline-item txt-center">
                 <div class="d-flex flex-column align-items-center">
-                  <p> ريال</p>
-                  <p><b>60,859</b></p>
+                  <p class="mb-2"> ريال</p>
+                  <p class="value purple-txt">3,567,567</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-12">
-          <ul class="nav nav-tabs p-0" id="myTab" role="tablist">
+        <div class="col-md-12 px-0">
+          <ul class="nav nav-tabs p-0 mt-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab-1" data-toggle="tab" data-target="#c1" type="button"
-                role="tab" aria-controls="c1" aria-selected="true">Home</button>
+              <button class="nav-link active" id="tab-1" data-toggle="tab" data-target="#c1" type="button" role="tab"
+                aria-controls="c1" aria-selected="true">
+                <i class="fa fa-check-square-o ml-1" aria-hidden="true"></i>
+                الاوامر</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-2" data-toggle="tab" data-target="#c2" type="button"
-                role="tab" aria-controls="c2" aria-selected="false">Profile</button>
+              <button class="nav-link" id="tab-2" data-toggle="tab" data-target="#c2" type="button" role="tab"
+                aria-controls="c2" aria-selected="false">
+                <i class="fa fa-credit-card ml-1" aria-hidden="true"></i>
+                المحفظة</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-3" data-toggle="tab" data-target="#c3" type="button"
-                role="tab" aria-controls="c3" aria-selected="false">Contact</button>
-            </li>
-
-
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-4" data-toggle="tab" data-target="#c4" type="button"
-                role="tab" aria-controls="c4" aria-selected="true">Home</button>
+              <button class="nav-link" id="tab-3" data-toggle="tab" data-target="#c3" type="button" role="tab"
+                aria-controls="c3" aria-selected="false">
+                <i class="fa fa-calculator ml-1" aria-hidden="true"></i>
+                حاسبتي</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-5" data-toggle="tab" data-target="#c5" type="button"
-                role="tab" aria-controls="c5" aria-selected="false">Profile</button>
+              <button class="nav-link" id="tab-4" data-toggle="tab" data-target="#c4" type="button" role="tab"
+                aria-controls="c4" aria-selected="true">
+                <i class="fa fa-file-text-o ml-1" aria-hidden="true"></i>
+                كشف الحساب</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-6" data-toggle="tab" data-target="#c6" type="button"
-                role="tab" aria-controls="c6" aria-selected="false">Contact</button>
+              <button class="nav-link" id="tab-5" data-toggle="tab" data-target="#c5" type="button" role="tab"
+                aria-controls="c5" aria-selected="false">
+                <i class="fa fa-exchange ml-1" aria-hidden="true"></i>
+                التحويلات الالكترونية</button>
             </li>
-
-
-            
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-6" data-toggle="tab" data-target="#c6" type="button" role="tab"
+                aria-controls="c6" aria-selected="false">
+                <i class="fa fa-credit-card-alt ml-1" aria-hidden="true"></i>
+                معلومات السداد</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-7" data-toggle="tab" data-target="#c7" type="button" role="tab"
+                aria-controls="c7" aria-selected="false">
+                <i class="fa fa-bell ml-1" aria-hidden="true"></i>
+                التنبيهات </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-8" data-toggle="tab" data-target="#c8" type="button" role="tab"
+                aria-controls="c8" aria-selected="false">
+                <i class="fa fa-pencil-square-o ml-1" aria-hidden="true"></i>
+                التوقيع الالكتروني</button>
+            </li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="c1" role="tabpanel" aria-labelledby="tab-1">
-              <div class="text-center">
-                <button class="btn btn-primary">شراء</button>
-                <button class="btn btn-danger">بيع</button>
+              <div class="text-center p-2">
+                <button class="btn btn-defualt buy-btn">
+                  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                  شراء</button>
+                <button class="btn btn-default sell-btn">
+                  <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                  بيع</button>
               </div>
-              <div class="d-flex flex-column align-items-center">
-                <img src="assets/images/star.png" alt="user" width="70">
-                <p>يرجى تسجيل الدخول</p>
+              <div class="d-flex flex-column align-items-center justify-content-center sign-in-block">
+                <img src="assets/images/star.png" alt="user" width="100">
+                <p class="fs-16 font-weight-bold mt-4">يرجى تسجيل الدخول</p>
               </div>
             </div>
             <div class="tab-pane fade" id="c2" role="tabpanel" aria-labelledby="tab-2">two</div>
@@ -245,24 +282,31 @@
             <div class="tab-pane fade" id="c4" role="tabpanel" aria-labelledby="tab-4">four</div>
             <div class="tab-pane fade" id="c5" role="tabpanel" aria-labelledby="tab-5">five</div>
             <div class="tab-pane fade" id="c6" role="tabpanel" aria-labelledby="tab-6">six</div>
+            <div class="tab-pane fade" id="c7" role="tabpanel" aria-labelledby="tab-7">seven</div>
+            <div class="tab-pane fade" id="c8" role="tabpanel" aria-labelledby="tab-8">eight</div>
           </div>
         </div>
       </div>
       <div class="col-md-2 col-xs-12">
-        <div class="market-price-block">
-          <ul class="nav nav-pills mb-3 justify-content-between p-0" id="pills-tab" role="tablist">
+        <div class="market-price-block main-block p-2">
+          <ul class="nav nav-pills justify-content-between p-0 border-bottom" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">السوق حسب الأسعار</button>
+              <button class="nav-link active p-0 pb-2" id="pills-home-tab" data-toggle="pill" data-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa fa-sort" aria-hidden="true"></i>
+                السوق حسب الأسعار</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile"
-                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">الصفقات</button>
+              <button class="gray-txt nav-link p-0 pb-2" id="pills-profile-tab" data-toggle="pill"
+                data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false">
+                <i class="fa fa-filter" aria-hidden="true"></i>
+                الصفقات</button>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              <table class="table table-bordered text-right">
+              <table class="table table-bordered text-right" id="stockTable">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -271,21 +315,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
                 </tbody>
               </table>
             </div>
@@ -300,21 +329,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
                 </tbody>
               </table>
             </div>

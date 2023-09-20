@@ -1,5 +1,10 @@
 //vars 
 $bg-gray: #F9FAFC;
+$black:#000;
+$green: #60AB7B;
+$purple: #99306E;
+$gray: #747473;
+$blue: #6777A3;
 
 @font-face {
     font-family: Janna;
@@ -21,25 +26,45 @@ body {
     font-size: 12px;
 }
 
+p {
+    display: flex;
+    margin: 0px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: #ffffff61;
+}
+
 nav {
     background-image: linear-gradient(to left, #83205A, #5C4974);
     font-family: Janna-bold;
     font-size: 12px;
 
-    #navbarSupportedContent{
-        form {
-            a{
+    #navbarSupportedContent {
+        .login-block {
+            a {
                 color: #fff;
                 text-decoration: underline;
+            }
+
+            input {
+                height: 30px;
+                background-color: #8C3A6D;
+                border: none;
+                color: #fff;
+            }
+
+            button {
+                background-image: linear-gradient(#A9E8C0, #60AB7B);
+                color: #fff;
             }
         }
     }
 
-    ul {
-        li {
-            &::after {
-                border-right: 1px solid $bg-gray;
-            }
+    .nav-left-side {
+        .nav-item {
+            // border-right: 1px solid #8D759A;
         }
 
         .nav-link {
@@ -48,15 +73,194 @@ nav {
     }
 }
 
-div {
-    border: 1px solid #000;
+.fs-14 {
+    font-size: 14px;
 }
 
-p {
-    display: flex;
-    margin:0px;
+.fs-16 {
+    font-size: 16px;
 }
 
+.black-txt {
+    color: $black !important;
+}
+
+.green-txt {
+    color: $green !important;
+}
+
+.purple-txt {
+    color: $purple !important;
+}
+
+.gray-txt {
+    color: $gray !important;
+}
+
+.blue-txt {
+    color: $blue !important;
+}
+
+.purple-bg {
+    background-color: $purple !important;
+}
+
+.org-cell {
+    background-color: #FEF3E4;
+}
+
+.blue-cell {
+    background-color: #E4F2FB;
+}
+
+.custom-bo {
+    border: 0.5px solid #8D759A;
+    height: 15px;
+    // margin-top: 10px;
+}
+
+.company-status-bar {
+    ul {
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .border{
+            border: 0.5px solid #E5E5E5!important;
+        }
+
+        li {
+            margin: 0px !important;
+
+            p {
+                &:first-child {
+                    color: #78879F;
+                }
+            }
+
+            .value {
+                font-weight: bold;
+                font-size: 18px;
+                color: #000;
+            }
+
+            .or-bg {
+                background-color: #FAEAD5;
+            }
+
+            .gn-bg {
+                background-color: #91C9A5;
+            }
+
+            .bu-bg {
+                background-color: #D2EAF8;
+            }
+        }
+    }
+}
+
+.main-block {
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    color: $gray;
+    overflow: auto;
+}
+
+.market-status {
+    font-size: 16px;
+}
+
+.bar-with-chart {
+    ul {
+        overflow-x: auto;
+    }
+
+    li {
+        margin: 30px 0px 10px 41px !important;
+        font-weight: bold;
+        font-size: 14px;
+    }
+}
+
+.company-list {
+    select {
+        height: 18px;
+        width: 65px;
+        font-size: 8px;
+    }
+
+    .comp-list-items {
+        li {
+            font-weight: bold;
+        }
+    }
+}
+
+
+.market-price-block {
+    .nav-link.active {
+        background-color: transparent;
+        color: $purple;
+        font-weight: bold;
+        border-bottom: 2px solid $purple;
+        border-radius: 0px;
+    }
+
+    table {
+        font-weight: bold;
+
+        th,
+        td {
+            border: 3px solid #fff;
+            padding: 5px;
+        }
+    }
+}
+
+
+#myTab {
+    .nav-link {
+        color: #74839A;
+        background-color: #F5F4F5;
+        border: 1px solid #dee2e6;
+    }
+
+    .active {
+        color: #fff;
+        background-image: linear-gradient(#BE4E90, #88235E);
+    }
+}
+
+#c1 {
+    border: 1px solid #dee2e6;
+    border-radius: 2px;
+
+    button {
+        width: 140px;
+        margin: 0px 5px;
+    }
+
+    .buy-btn {
+        color: #2E6C91;
+        background-image: linear-gradient(#95D4F8, #60B3E4);
+    }
+
+    .sell-btn {
+        color: #8B5214;
+        background-image: linear-gradient(#FEE1B9, #F3B868);
+    }
+
+    .sign-in-block {
+        background-color: #EFEFEF;
+        height: 450px;
+        color: #000;
+
+        img {
+            border-radius: 80px;
+        }
+
+    }
+}
 
 
 
@@ -64,6 +268,17 @@ p {
 // ================= MEDIA QUERY ================
 // for navbar
 @media screen and (max-width: 991px) {
+    .custom-bo {
+        border: none;
+        height: 0px;
+    }
+
+    form {
+        input {
+            margin: 2px 0px;
+        }
+    }
+
     .navbar-collapse {
         // display: flex;
         // flex-direction: column-reverse;
@@ -79,5 +294,13 @@ p {
 @media screen and (max-width: 766px) {
     .market-status {
         flex-direction: column;
+        align-items: center;
+    }
+    .company-status-bar{
+        width: 300%;
+    }
+
+    .main-block{
+        margin: 12px 0px;
     }
 }

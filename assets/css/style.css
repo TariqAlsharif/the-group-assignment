@@ -16,32 +16,201 @@ body {
   font-size: 12px;
 }
 
-nav {
-  background-image: linear-gradient(to left, #83205A, #5C4974);
-  font-family: Janna-bold;
-  font-size: 12px;
-}
-nav #navbarSupportedContent form a {
-  color: #fff;
-  text-decoration: underline;
-}
-nav ul li::after {
-  border-right: 1px solid #F9FAFC;
-}
-nav ul .nav-link {
-  color: #fff !important;
-}
-
-div {
-  border: 1px solid #000;
-}
-
 p {
   display: flex;
   margin: 0px;
 }
 
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.3803921569);
+}
+
+nav {
+  background-image: linear-gradient(to left, #83205A, #5C4974);
+  font-family: Janna-bold;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block a {
+  color: #fff;
+  text-decoration: underline;
+}
+nav #navbarSupportedContent .login-block input {
+  height: 30px;
+  background-color: #8C3A6D;
+  border: none;
+  color: #fff;
+}
+nav #navbarSupportedContent .login-block button {
+  background-image: linear-gradient(#A9E8C0, #60AB7B);
+  color: #fff;
+}
+nav .nav-left-side .nav-link {
+  color: #fff !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.black-txt {
+  color: #000 !important;
+}
+
+.green-txt {
+  color: #60AB7B !important;
+}
+
+.purple-txt {
+  color: #99306E !important;
+}
+
+.gray-txt {
+  color: #747473 !important;
+}
+
+.blue-txt {
+  color: #6777A3 !important;
+}
+
+.purple-bg {
+  background-color: #99306E !important;
+}
+
+.org-cell {
+  background-color: #FEF3E4;
+}
+
+.blue-cell {
+  background-color: #E4F2FB;
+}
+
+.custom-bo {
+  border: 0.5px solid #8D759A;
+  height: 15px;
+}
+
+.company-status-bar ul {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.company-status-bar ul .border {
+  border: 0.5px solid #E5E5E5 !important;
+}
+.company-status-bar ul li {
+  margin: 0px !important;
+}
+.company-status-bar ul li p:first-child {
+  color: #78879F;
+}
+.company-status-bar ul li .value {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+.company-status-bar ul li .or-bg {
+  background-color: #FAEAD5;
+}
+.company-status-bar ul li .gn-bg {
+  background-color: #91C9A5;
+}
+.company-status-bar ul li .bu-bg {
+  background-color: #D2EAF8;
+}
+
+.main-block {
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  color: #747473;
+  overflow: auto;
+}
+
+.market-status {
+  font-size: 16px;
+}
+
+.bar-with-chart ul {
+  overflow-x: auto;
+}
+.bar-with-chart li {
+  margin: 30px 0px 10px 41px !important;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.company-list select {
+  height: 18px;
+  width: 65px;
+  font-size: 8px;
+}
+.company-list .comp-list-items li {
+  font-weight: bold;
+}
+
+.market-price-block .nav-link.active {
+  background-color: transparent;
+  color: #99306E;
+  font-weight: bold;
+  border-bottom: 2px solid #99306E;
+  border-radius: 0px;
+}
+.market-price-block table {
+  font-weight: bold;
+}
+.market-price-block table th,
+.market-price-block table td {
+  border: 3px solid #fff;
+  padding: 5px;
+}
+
+#myTab .nav-link {
+  color: #74839A;
+  background-color: #F5F4F5;
+  border: 1px solid #dee2e6;
+}
+#myTab .active {
+  color: #fff;
+  background-image: linear-gradient(#BE4E90, #88235E);
+}
+
+#c1 {
+  border: 1px solid #dee2e6;
+  border-radius: 2px;
+}
+#c1 button {
+  width: 140px;
+  margin: 0px 5px;
+}
+#c1 .buy-btn {
+  color: #2E6C91;
+  background-image: linear-gradient(#95D4F8, #60B3E4);
+}
+#c1 .sell-btn {
+  color: #8B5214;
+  background-image: linear-gradient(#FEE1B9, #F3B868);
+}
+#c1 .sign-in-block {
+  background-color: #EFEFEF;
+  height: 450px;
+  color: #000;
+}
+#c1 .sign-in-block img {
+  border-radius: 80px;
+}
+
 @media screen and (max-width: 991px) {
+  .custom-bo {
+    border: none;
+    height: 0px;
+  }
+  form input {
+    margin: 2px 0px;
+  }
   .navbar-nav {
     align-items: flex-start;
   }
@@ -49,5 +218,12 @@ p {
 @media screen and (max-width: 766px) {
   .market-status {
     flex-direction: column;
+    align-items: center;
+  }
+  .company-status-bar {
+    width: 300%;
+  }
+  .main-block {
+    margin: 12px 0px;
   }
 }/*# sourceMappingURL=style.css.map */
