@@ -1,6 +1,6 @@
 //vars 
 $bg-gray: #F9FAFC;
-$black:#000;
+$black: #000;
 $green: #60AB7B;
 $purple: #99306E;
 $gray: #747473;
@@ -63,10 +63,6 @@ nav {
     }
 
     .nav-left-side {
-        .nav-item {
-            // border-right: 1px solid #8D759A;
-        }
-
         .nav-link {
             color: #fff !important;
         }
@@ -124,8 +120,8 @@ nav {
         overflow-x: auto;
         overflow-y: hidden;
 
-        .border{
-            border: 0.5px solid #E5E5E5!important;
+        .border {
+            border: 0.5px solid #E5E5E5 !important;
         }
 
         li {
@@ -263,8 +259,6 @@ nav {
 }
 
 
-
-
 // ================= MEDIA QUERY ================
 // for navbar
 @media screen and (max-width: 991px) {
@@ -279,13 +273,7 @@ nav {
         }
     }
 
-    .navbar-collapse {
-        // display: flex;
-        // flex-direction: column-reverse;
-    }
-
     .navbar-nav {
-        // display: flex;   
         align-items: flex-start;
     }
 }
@@ -296,11 +284,12 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-    .company-status-bar{
+
+    .company-status-bar {
         width: 300%;
     }
 
-    .main-block{
+    .main-block {
         margin: 12px 0px;
     }
 }
