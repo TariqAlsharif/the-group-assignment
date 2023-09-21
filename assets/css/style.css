@@ -225,8 +225,11 @@ nav .nav-left-side .nav-link {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .market-status {
+    width: 125%;
+  }
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
   .market-status {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -239,7 +242,37 @@ nav .nav-left-side .nav-link {
   .company-status-bar {
     width: 300%;
   }
+  .company-status-bar ul li .co-title {
+    font-size: 10px !important;
+  }
+  .company-status-bar ul li .value {
+    font-size: 15px !important;
+  }
   .main-block {
     margin: 12px 0px;
+  }
+  .market-status {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1380px) {
+  #myTab {
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    overflow: auto;
+    overflow-y: hidden;
+  }
+  #myTab button {
+    height: 80px;
+    max-height: 100px;
+  }
+  .company-status-bar ul li .co-img {
+    width: 60px;
+  }
+  .company-status-bar ul li .co-title {
+    font-size: 8px;
+  }
+  .company-status-bar ul li .value {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=style.css.map */
