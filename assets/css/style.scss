@@ -54,6 +54,11 @@ nav {
                 background-color: #8C3A6D;
                 border: none;
                 color: #fff;
+                font-size: 12px;
+                &::placeholder {
+                    color: #b7b7b7;
+                    font-size: 12px;
+                }
             }
 
             button {

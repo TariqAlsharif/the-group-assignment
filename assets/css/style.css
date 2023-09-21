@@ -45,6 +45,27 @@ nav #navbarSupportedContent .login-block input {
   background-color: #8C3A6D;
   border: none;
   color: #fff;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block input::-webkit-input-placeholder {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block input::-moz-placeholder {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block input:-ms-input-placeholder {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block input::-ms-input-placeholder {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+nav #navbarSupportedContent .login-block input::placeholder {
+  color: #b7b7b7;
+  font-size: 12px;
 }
 nav #navbarSupportedContent .login-block button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#A9E8C0), to(#60AB7B));
