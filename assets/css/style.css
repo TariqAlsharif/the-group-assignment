@@ -8,6 +8,8 @@
 }
 * {
   margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -17,6 +19,8 @@ body {
 }
 
 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px;
 }
@@ -27,6 +31,7 @@ p {
 }
 
 nav {
+  background-image: -webkit-gradient(linear, right top, left top, from(#83205A), to(#5C4974));
   background-image: linear-gradient(to left, #83205A, #5C4974);
   font-family: Janna-bold;
   font-size: 12px;
@@ -42,6 +47,7 @@ nav #navbarSupportedContent .login-block input {
   color: #fff;
 }
 nav #navbarSupportedContent .login-block button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#A9E8C0), to(#60AB7B));
   background-image: linear-gradient(#A9E8C0, #60AB7B);
   color: #fff;
 }
@@ -175,6 +181,7 @@ nav .nav-left-side .nav-link {
 }
 #myTab .active {
   color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BE4E90), to(#88235E));
   background-image: linear-gradient(#BE4E90, #88235E);
 }
 
@@ -188,10 +195,12 @@ nav .nav-left-side .nav-link {
 }
 #c1 .buy-btn {
   color: #2E6C91;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#95D4F8), to(#60B3E4));
   background-image: linear-gradient(#95D4F8, #60B3E4);
 }
 #c1 .sell-btn {
   color: #8B5214;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FEE1B9), to(#F3B868));
   background-image: linear-gradient(#FEE1B9, #F3B868);
 }
 #c1 .sign-in-block {
@@ -212,13 +221,20 @@ nav .nav-left-side .nav-link {
     margin: 2px 0px;
   }
   .navbar-nav {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media screen and (max-width: 766px) {
   .market-status {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .company-status-bar {
     width: 300%;
